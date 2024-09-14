@@ -10,7 +10,12 @@ namespace Domain.Orders
 
 		public OrderId Id { get; set; }
 
+
 		public CustomerId CustomerId  { get; set; }
+
+		private Order()
+		{
+		}
 
 		public IReadOnlyList<LineItem> LineItems => _lineItems.ToList();
 

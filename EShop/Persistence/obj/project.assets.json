@@ -2324,11 +2324,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ahmet/Desktop/adsız klasör 2/EShop/EShop/Persistence/Persistence.csproj",
+      "projectUniqueName": "/Users/ahmet/Desktop/eShop/EShop/EShop/Persistence/Persistence.csproj",
       "projectName": "Persistence",
-      "projectPath": "/Users/ahmet/Desktop/adsız klasör 2/EShop/EShop/Persistence/Persistence.csproj",
+      "projectPath": "/Users/ahmet/Desktop/eShop/EShop/EShop/Persistence/Persistence.csproj",
       "packagesPath": "/Users/ahmet/.nuget/packages/",
-      "outputPath": "/Users/ahmet/Desktop/adsız klasör 2/EShop/EShop/Persistence/obj/",
+      "outputPath": "/Users/ahmet/Desktop/eShop/EShop/EShop/Persistence/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ahmet/.nuget/NuGet/NuGet.Config"
@@ -2344,8 +2344,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/ahmet/Desktop/adsız klasör 2/EShop/EShop/Domain/Domain.csproj": {
-              "projectPath": "/Users/ahmet/Desktop/adsız klasör 2/EShop/EShop/Domain/Domain.csproj"
+            "/Users/ahmet/Desktop/eShop/EShop/EShop/Domain/Domain.csproj": {
+              "projectPath": "/Users/ahmet/Desktop/eShop/EShop/EShop/Domain/Domain.csproj"
             }
           }
         }

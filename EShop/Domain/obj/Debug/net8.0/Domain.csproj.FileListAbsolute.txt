@@ -9,3 +9,15 @@
 /Users/ahmet/Desktop/adsız klasör 2/EShop/EShop/Domain/obj/Debug/net8.0/refint/Domain.dll
 /Users/ahmet/Desktop/adsız klasör 2/EShop/EShop/Domain/obj/Debug/net8.0/Domain.pdb
 /Users/ahmet/Desktop/adsız klasör 2/EShop/EShop/Domain/obj/Debug/net8.0/ref/Domain.dll
+/Users/ahmet/Desktop/eShop/EShop/EShop/Domain/bin/Debug/net8.0/Domain.deps.json
+/Users/ahmet/Desktop/eShop/EShop/EShop/Domain/bin/Debug/net8.0/Domain.dll
+/Users/ahmet/Desktop/eShop/EShop/EShop/Domain/bin/Debug/net8.0/Domain.pdb
+/Users/ahmet/Desktop/eShop/EShop/EShop/Domain/obj/Debug/net8.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ahmet/Desktop/eShop/EShop/EShop/Domain/obj/Debug/net8.0/Domain.AssemblyInfoInputs.cache
+/Users/ahmet/Desktop/eShop/EShop/EShop/Domain/obj/Debug/net8.0/Domain.AssemblyInfo.cs
+/Users/ahmet/Desktop/eShop/EShop/EShop/Domain/obj/Debug/net8.0/Domain.csproj.CoreCompileInputs.cache
+/Users/ahmet/Desktop/eShop/EShop/EShop/Domain/obj/Debug/net8.0/Domain.sourcelink.json
+/Users/ahmet/Desktop/eShop/EShop/EShop/Domain/obj/Debug/net8.0/Domain.dll
+/Users/ahmet/Desktop/eShop/EShop/EShop/Domain/obj/Debug/net8.0/refint/Domain.dll
+/Users/ahmet/Desktop/eShop/EShop/EShop/Domain/obj/Debug/net8.0/Domain.pdb
+/Users/ahmet/Desktop/eShop/EShop/EShop/Domain/obj/Debug/net8.0/ref/Domain.dll

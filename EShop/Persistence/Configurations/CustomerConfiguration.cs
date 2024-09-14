@@ -7,7 +7,7 @@ namespace Persistence.Configurations
 {
     internal class CustomerConfiguration : IEntityTypeConfiguration<Customer>
     {
-        public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Customer> builder)
+        public void Configure(EntityTypeBuilder<Customer> builder)
         {
             builder.HasKey(c => c.Id);
 

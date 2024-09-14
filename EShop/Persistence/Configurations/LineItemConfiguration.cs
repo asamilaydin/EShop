@@ -2,12 +2,13 @@
 using Domain.Orders;
 using Domain.Product;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Persistence.Configurations
 {
     internal class LineItemConfiguration : IEntityTypeConfiguration<LineItem>
     {
-        public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<LineItem> builder)
+        public void Configure(EntityTypeBuilder<LineItem> builder)
         {
             builder.HasKey(li => li.Id);
 
@@ -17,8 +18,7 @@ namespace Persistence.Configurations
                 .WithMany()
                 .HasForeignKey(li => li.ProductId);
 
-            builder.OwnsOne(li => li.Price); // Price ı listitem  tablosunda tutar
-
+            builder.OwnsOne(li => li.Price);
         }
     }
 }

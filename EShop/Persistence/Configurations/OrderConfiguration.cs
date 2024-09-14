@@ -2,12 +2,13 @@
 using Microsoft.EntityFrameworkCore;
 using Domain.Orders;
 using Domain.Customer;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Persistence.Configurations
 {
     internal class OrderConfiguration : IEntityTypeConfiguration<Order>
     {
-        public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Order> builder)
+        public void Configure(EntityTypeBuilder<Order> builder)
         {
             builder.HasKey(o => o.Id);
 

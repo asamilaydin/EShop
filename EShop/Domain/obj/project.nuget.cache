@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UW4y7RLOgp9m7qTvzgaQQ3Yt/KcwNQrNAx21qE1RUyx+qhPZxJDA/nk0j7krpwGRpwcLBA90SSYFTBM4WAoPCw==",
+  "dgSpecHash": "OAcU7kZLkEWnL75i1yNNtmo8bJla03mWCGEDkVkAK1XxkqjJmpYG49o5izVI0cAWqQ6RtlI6rBm0Ez3yGHn/7Q==",
   "success": true,
-  "projectFilePath": "/Users/ahmet/Desktop/adsız klasör 2/EShop/EShop/Domain/Domain.csproj",
+  "projectFilePath": "/Users/ahmet/Desktop/eShop/EShop/EShop/Domain/Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
