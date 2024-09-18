@@ -5,7 +5,7 @@
     {
         private const int DefaultLength = 15;
 
-        private Sku(string value) => Value = value;
+        public Sku(string value) => Value = value;
 
         public string Value { get; init; }
 

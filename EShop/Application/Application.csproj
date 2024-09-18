@@ -8,8 +8,23 @@
 
   <ItemGroup>
     <None Remove="Customer\" />
+    <None Remove="Customer\Create\" />
+    <None Remove="Customer\Delete\" />
+    <None Remove="Customer\GetAll\" />
+    <None Remove="Customer\GetById\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Customer\" />
+    <Folder Include="Customer\Create\" />
+    <Folder Include="Customer\Delete\" />
+    <Folder Include="Customer\GetAll\" />
+    <Folder Include="Customer\GetById\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
 </Project>

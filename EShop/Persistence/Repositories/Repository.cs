@@ -11,7 +11,7 @@ namespace Persistence.Repositories
 
         public Repository(ApplicationDbContext context)
         {
-            context = _context;
+            _context = context;
         }
 
         public void Delete(TEntity entity)
@@ -37,6 +37,7 @@ namespace Persistence.Repositories
         public void Insert(TEntity entity)
         {
             _context.Set<TEntity>().Add(entity);
+            
         }
 
         public Task SaveChangeAsync()
