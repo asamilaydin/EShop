@@ -1,10 +1,9 @@
 ﻿using MediatR;
-using System.Collections.Generic;
 
 namespace Application.Customer.GetAll
 {
-    public class GetAllCustomersQueryRequest : IRequest<GetAllCustomersQueryResponse>
+    public class GetAllCustomersQueryRequest : IRequest<GetAllCustomersQueryResponse.GetAllCustomersResponse>
     {
-        
+        // Eğer sorguya parametre eklenecekse buraya eklenebilir
     }
 }

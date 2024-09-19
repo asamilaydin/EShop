@@ -3,16 +3,17 @@ using Domain.Customer;
 using MediatR;
 namespace Application.Customer.GetAll
 {
-	public class GetAllCustomersQueryResponse 
-	{
-        public sealed record GetAllCustomersResponse(IEnumerable<Customer> Customers);
+    public class GetAllCustomersQueryResponse
+    {
+        public sealed record GetAllCustomersResponse(IEnumerable<CustomerModel> Customers);
 
-        public sealed record Customer
+        public sealed record CustomerModel
         {
-            public CustomerId Id { get; init; }
+            public CustomerId Id { get; init; }  // Güçlü tip yerine Guid
             public string Name { get; init; }
             public string Email { get; init; }
         }
     }
 }
+
 

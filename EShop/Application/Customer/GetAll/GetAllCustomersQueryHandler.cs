@@ -1,5 +1,5 @@
 ﻿using Application.Customer.GetAll;
-using Domain.Customer; 
+using Domain.Customer;
 using MediatR;
 using static Application.Customer.GetAll.GetAllCustomersQueryResponse;
 
@@ -18,12 +18,12 @@ namespace Application.QueryHandlers
         {
             var customers = await _customerRepository.GetAllAsync();
 
-            var customerRecords = customers.Select(c => new Domain.Customer.Customer
+            // Domain'deki Customer'ı Application'daki Customer'a dönüştürmek
+            var customerRecords = customers.Select(c => new CustomerModel
             {
-                Id = c.Id,
+                Id = c.Id,  
                 Name = c.Name,
                 Email = c.Email
-                
             }).ToList();
 
             return new GetAllCustomersResponse(customerRecords);

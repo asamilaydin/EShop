@@ -10,13 +10,13 @@ namespace Persistence
 {
 	public static class ServiceRegistration
 	{
-		public static void AddPersistenceService(this IServiceCollection services)
+		public static void AddPersistenceServices(this IServiceCollection collection)
 		{
-			services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql("Port=5432;Database=EShopDB;Host=localhost;User Id=postgres;Password=12345"));
+			collection.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql("Port=5432;Database=EShopDB;Host=localhost;User Id=postgres;Password=12345"));
 
-			services.AddScoped<ICustomerRepository, CustomerRepository>();
-            services.AddScoped<IOrderRepository, OrderRepository>();
-            services.AddScoped<IProductRepository, ProductRepository>();
+            collection.AddScoped<ICustomerRepository, CustomerRepository>();
+            collection.AddScoped<IOrderRepository, OrderRepository>();
+            collection.AddScoped<IProductRepository, ProductRepository>();
 
         }
 	}
