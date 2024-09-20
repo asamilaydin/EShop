@@ -1,3 +1,6 @@
 ﻿Microsoft Exention, app.settings.json okunacak, connectionstirngi tek dosyadan oku. (.congiguration, c.json)
 UnitOfWork kullan
 constructur'daki başlatıcıyı sor
+Mapper Kullan
+EndPoint Kullan
+cqrs de fluent api kullan

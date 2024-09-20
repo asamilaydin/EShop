@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "8N5hB5eRNx5iFpWQU7ACk880J99o9dV3RCYVGOleTpTuG40KifHmOWsH6G1GPqU3ST+fo8DC5qQrXabjtz1Hag==",
+  "dgSpecHash": "Z+OlXkfb1dchNE5P6opTFJgD2luXq6gryijqPdxAM6qiV9zDis5N7cATddm9qRLNbwufi2myl75y/DborIgbZA==",
   "success": true,
   "projectFilePath": "/Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/EShopApp.csproj",
   "expectedPackageFiles": [
+    "/Users/ahmet/.nuget/packages/mediatr/11.1.0/mediatr.11.1.0.nupkg.sha512",
+    "/Users/ahmet/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
+    "/Users/ahmet/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.1.0/mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "/Users/ahmet/.nuget/packages/microsoft.entityframeworkcore/8.0.8/microsoft.entityframeworkcore.8.0.8.nupkg.sha512",
     "/Users/ahmet/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.8/microsoft.entityframeworkcore.abstractions.8.0.8.nupkg.sha512",
     "/Users/ahmet/.nuget/packages/microsoft.entityframeworkcore.analyzers/8.0.8/microsoft.entityframeworkcore.analyzers.8.0.8.nupkg.sha512",

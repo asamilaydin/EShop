@@ -5,6 +5,9 @@
 /Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/bin/Debug/net8.0/EShopApp.runtimeconfig.json
 /Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/bin/Debug/net8.0/EShopApp.dll
 /Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/bin/Debug/net8.0/EShopApp.pdb
+/Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/bin/Debug/net8.0/MediatR.dll
+/Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/bin/Debug/net8.0/MediatR.Contracts.dll
+/Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/bin/Debug/net8.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
 /Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
 /Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
 /Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll
@@ -14,10 +17,12 @@
 /Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/bin/Debug/net8.0/Application.dll
 /Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/bin/Debug/net8.0/Domain.dll
 /Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/bin/Debug/net8.0/Persistence.dll
-/Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/bin/Debug/net8.0/Persistence.pdb
+/Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/bin/Debug/net8.0/Application.pdb
 /Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/bin/Debug/net8.0/Domain.pdb
+/Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/bin/Debug/net8.0/Persistence.pdb
 /Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/obj/Debug/net8.0/EShopApp.csproj.AssemblyReference.cache
 /Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/obj/Debug/net8.0/EShopApp.GeneratedMSBuildEditorConfig.editorconfig
 /Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/obj/Debug/net8.0/EShopApp.AssemblyInfoInputs.cache

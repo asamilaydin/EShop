@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using MediatR;
 
+
 namespace Application
 {
 	public static class ServiceRegistration
