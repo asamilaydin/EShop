@@ -6,6 +6,8 @@ using Application.Customer.GetAll;
 using Application.Customer.Create;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Application.Customer.Delete;
+using Application.Customer.GetById;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -28,12 +30,29 @@ namespace EShopApp.Controllers
             return Ok(response);            
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Get([FromQuery] CreateCustomerCommandRequest createCustomerCommandRequest)
+        [HttpPost("create")]
+        public async Task<IActionResult> Create([FromQuery] CreateCustomerCommandRequest createCustomerCommandRequest)
         {
             CreateCustomerCommandResponse  response = await _mediator.Send(createCustomerCommandRequest);
             return Ok(response);
         }
+
+        [HttpDelete("delete-customer")]
+        public async Task<IActionResult> Delete ([FromBody] DeleteCustomerCommandRequest deleteCustomerCommandRequest)
+        {
+            DeleteCustomerCommandResponse response = await _mediator.Send(deleteCustomerCommandRequest);
+            return Ok(response);
+        }
+
+
+        [HttpGet("GetById-Customer")]
+        public async Task<IActionResult> GetById([FromQuery] GetByIdCustomerQueryRequest getByIdCustomerQueryrequest)
+        {
+            var response = await _mediator.Send(getByIdCustomerQueryrequest);
+            return Ok(response);
+            
+}
+
     }
 }
 

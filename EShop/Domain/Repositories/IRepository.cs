@@ -15,6 +15,8 @@ namespace Domain.Repositories
 
         void Delete(TEntity entity);
 
-		Task SaveChangeAsync();
+		Task<TEntity> GetByEmailAsync(string Email);
+
+        Task SaveChangeAsync();
     }
 }// Daha sonra bu sınıfı Tüm projenin kullanabileceği ortak dosyaya taşı.

@@ -7,7 +7,7 @@ namespace Persistence.Repositories
         where TEntity : class
     {
 
-        private readonly ApplicationDbContext _context;
+        protected readonly ApplicationDbContext _context;
 
         public Repository(ApplicationDbContext context)
         {
@@ -49,6 +49,13 @@ namespace Persistence.Repositories
         {
             _context.Set<TEntity>().Update(entity);
         }
+        public async Task<TEntity> GetByEmailAsync(string email)
+        {
+            return await _context.Set<TEntity>()
+                                 .FirstOrDefaultAsync(entity => EF.Property<string>(entity, "Email") == email);
+        }
+
+      
     }
 }
 

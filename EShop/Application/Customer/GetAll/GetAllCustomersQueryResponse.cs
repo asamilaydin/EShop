@@ -9,7 +9,7 @@ namespace Application.Customer.GetAll
 
         public sealed record CustomerModel
         {
-            public CustomerId Id { get; init; }  // Güçlü tip yerine Guid
+            public CustomerId Id { get; init; }  
             public string Name { get; init; }
             public string Email { get; init; }
         }
