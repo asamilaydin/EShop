@@ -1,4 +1,5 @@
 ﻿using System;
+using AutoMapper;
 using Domain.Customer;
 using MediatR;
 namespace Application.Customer.Create
@@ -7,9 +8,13 @@ namespace Application.Customer.Create
 	{
 
         private readonly ICustomerRepository _customerRepository;
-		public CreateCustomerCommandHandler(ICustomerRepository customerRepository) 
+        private readonly IMapper _mapper;
+
+		public CreateCustomerCommandHandler(ICustomerRepository customerRepository, IMapper mapper) 
 		{
             _customerRepository = customerRepository;
+            _mapper = mapper;
+
 
         }
 
@@ -17,14 +22,9 @@ namespace Application.Customer.Create
         {
 
              var customerId =  Guid.NewGuid();
-            var newCustomer = new Domain.Customer.Customer
-            {
-                Id = new CustomerId(customerId),      // ID doğrudan request'ten alınır
-                Name = request.Name,  // İsim doğrudan request'ten alınır
-                Email = request.Email // Email doğrudan request'ten alınır
-            };
+            var newCustomer = _mapper.Map<Domain.Customer.Customer>(request);
 
-            // Repository aracılığıyla veritabanına eklenir
+
             _customerRepository.Insert(newCustomer);
             _customerRepository.SaveChangeAsync();
 

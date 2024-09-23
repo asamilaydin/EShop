@@ -26,7 +26,7 @@ namespace EShopApp.Controllers
         [HttpGet]
         public async Task<IActionResult> Get([FromQuery] GetAllCustomersQueryRequest getAllCustomersQueryRequest)
         {
-             GetAllCustomersQueryResponse.GetAllCustomersResponse response = await _mediator.Send(getAllCustomersQueryRequest);
+            GetAllCustomersResponse response = await _mediator.Send(getAllCustomersQueryRequest);
             return Ok(response);            
         }
 

@@ -4,3 +4,4 @@ constructur'daki başlatıcıyı sor
 Mapper Kullan
 EndPoint Kullan
 cqrs de fluent api kullan
+Dupper kullan

@@ -45,3 +45,5 @@
 /Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/obj/Debug/net8.0/EShopApp.pdb
 /Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/obj/Debug/net8.0/EShopApp.genruntimeconfig.cache
 /Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/obj/Debug/net8.0/ref/EShopApp.dll
+/Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/bin/Debug/net8.0/AutoMapper.dll
+/Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/bin/Debug/net8.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll

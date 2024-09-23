@@ -3,8 +3,7 @@ using Domain.Customer;
 using MediatR;
 namespace Application.Customer.GetAll
 {
-    public class GetAllCustomersQueryResponse
-    {
+
         public sealed record GetAllCustomersResponse(IEnumerable<CustomerModel> Customers);
 
         public sealed record CustomerModel
@@ -13,7 +12,7 @@ namespace Application.Customer.GetAll
             public string Name { get; init; }
             public string Email { get; init; }
         }
-    }
+    
 }
 
 
