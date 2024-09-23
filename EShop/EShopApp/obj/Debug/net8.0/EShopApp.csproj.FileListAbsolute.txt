@@ -47,3 +47,6 @@
 /Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/obj/Debug/net8.0/ref/EShopApp.dll
 /Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/bin/Debug/net8.0/AutoMapper.dll
 /Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/bin/Debug/net8.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/bin/Debug/net8.0/FluentValidation.dll
+/Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/bin/Debug/net8.0/FluentValidation.AspNetCore.dll
+/Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll

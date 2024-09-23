@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "PUsfCkkX5LvAXYrcANOyPNZA4cwsUSdQfc3+rQDFHqpkhXZun0mf61bDg1LsMHkzWPavP06Ac5sQMINl7Rvuog==",
+  "dgSpecHash": "6LxstdvknKm/XhL/i7caYvcEUdfao17lRiXaPVxiNK88wMzx7UYYxyVIBLU1Ufq5mnVI+qcc9PI8eSQLbuo1og==",
   "success": true,
   "projectFilePath": "/Users/ahmet/Desktop/eShop/EShop/EShop/Application/Application.csproj",
   "expectedPackageFiles": [
     "/Users/ahmet/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/ahmet/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "/Users/ahmet/.nuget/packages/fluentvalidation/11.10.0/fluentvalidation.11.10.0.nupkg.sha512",
+    "/Users/ahmet/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "/Users/ahmet/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.10.0/fluentvalidation.dependencyinjectionextensions.11.10.0.nupkg.sha512",
     "/Users/ahmet/.nuget/packages/mediatr/11.1.0/mediatr.11.1.0.nupkg.sha512",
     "/Users/ahmet/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
     "/Users/ahmet/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.1.0/mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",

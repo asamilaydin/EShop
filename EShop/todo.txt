@@ -1,7 +1,8 @@
 ﻿Microsoft Exention, app.settings.json okunacak, connectionstirngi tek dosyadan oku. (.congiguration, c.json)
 UnitOfWork kullan
 constructur'daki başlatıcıyı sor
-Mapper Kullan
+Mapper Kullan -
 EndPoint Kullan
-cqrs de fluent api kullan
+cqrs de fluent api kullan // Validatörü serviceregistrationda düzenle + filter kullan -
 Dupper kullan
+DomaintEventHandler

@@ -2,7 +2,9 @@
 using Microsoft.Extensions.DependencyInjection;
 using MediatR;
 using AutoMapper;
-
+using FluentValidation;
+using FluentValidation.AspNetCore;
+using Application.Customer.Create;
 
 namespace Application
 {
@@ -12,7 +14,8 @@ namespace Application
 		{
 			collection.AddMediatR(typeof(ServiceRegistration));
 			collection.AddAutoMapper(typeof(ServiceRegistration));
-		}
+            collection.AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CreateCustomerCommandValidator>());
+        }
 	}
 }
 
