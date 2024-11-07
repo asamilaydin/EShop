@@ -37,7 +37,14 @@ namespace Persistence.Repositories
         public void Insert(TEntity entity)
         {
             _context.Set<TEntity>().Add(entity);
-            
+
+            var trackedEntities = _context.ChangeTracker.Entries();
+
+            foreach (var entry in trackedEntities)
+            {
+                Console.WriteLine($"Entity: {entry.Entity.GetType().Name}, State: {entry.State}");
+            }
+
         }
 
         public Task SaveChangeAsync()

@@ -1,5 +1,6 @@
 ﻿using System;
-using MediatR;	
+using MediatR;
+
 namespace Application.Customer.Delete
 {
 	public sealed record DeleteCustomerCommandRequest : IRequest<DeleteCustomerCommandResponse>

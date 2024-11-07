@@ -12,6 +12,16 @@
     <None Remove="Customer\Delete\" />
     <None Remove="Customer\GetAll\" />
     <None Remove="Customer\GetById\" />
+    <None Remove="Order\" />
+    <None Remove="Order\Create\" />
+    <None Remove="Order\Delete\" />
+    <None Remove="Order\GetAll\" />
+    <None Remove="Order\GetById\" />
+    <None Remove="Product\" />
+    <None Remove="Product\Delete\" />
+    <None Remove="Product\Create\" />
+    <None Remove="Product\GetById\" />
+    <None Remove="Product\GetAll\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Customer\" />
@@ -19,6 +29,16 @@
     <Folder Include="Customer\Delete\" />
     <Folder Include="Customer\GetAll\" />
     <Folder Include="Customer\GetById\" />
+    <Folder Include="Order\" />
+    <Folder Include="Order\Create\" />
+    <Folder Include="Order\Delete\" />
+    <Folder Include="Order\GetAll\" />
+    <Folder Include="Order\GetById\" />
+    <Folder Include="Product\" />
+    <Folder Include="Product\Delete\" />
+    <Folder Include="Product\Create\" />
+    <Folder Include="Product\GetById\" />
+    <Folder Include="Product\GetAll\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />

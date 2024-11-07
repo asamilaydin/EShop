@@ -1,5 +1,6 @@
 ﻿using System;
 using AutoMapper;
+
 namespace Application.Customer.GetById
 {
 	public class GetByIdCustomerMapper : Profile

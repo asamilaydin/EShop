@@ -9,14 +9,12 @@ namespace Persistence.Repositories
 		public CustomerRepository(ApplicationDbContext context) : base (context)
 		{
             
-
         }
 
         public async Task<Customer> GetByIdAsync(Guid id)
         {
             return await _context.Set<Customer>().FindAsync(new CustomerId(id));
         }
-
 
     }
 }

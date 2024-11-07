@@ -7,6 +7,7 @@ namespace Domain.Customer
 	public interface ICustomerRepository : IRepository<Customer>
 	{
         Task<Customer> GetByIdAsync(Guid id);
+        
     }
 
 }

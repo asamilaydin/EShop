@@ -2,7 +2,8 @@
 UnitOfWork kullan
 constructur'daki başlatıcıyı sor
 Mapper Kullan -
-EndPoint Kullan
+EndPoint Kullan - Minimal Api
 cqrs de fluent api kullan // Validatörü serviceregistrationda düzenle + filter kullan -
-Dupper kullan
+Dupper kullan (dupperi prdoducta kullan)
 DomaintEventHandler
+Queryilerin requestine gerek yok (düzenle)

@@ -1,6 +1,6 @@
 ﻿namespace Domain.Product
 {
-    //stock
+   
     public record Sku
     {
         private const int DefaultLength = 15;
@@ -21,13 +21,9 @@
                 return null;
             }
 
-
-
             return new Sku(value);
 
         }
-
-
 
     }
 }

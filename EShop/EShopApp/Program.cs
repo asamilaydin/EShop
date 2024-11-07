@@ -1,6 +1,7 @@
 using Domain;
 using Application;
 using Persistence;
+using EShopApp.Endpoints;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +22,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.MapCustomerEndpoints();
 
 app.UseHttpsRedirection();
 

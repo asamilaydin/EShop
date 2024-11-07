@@ -1,7 +1,6 @@
-﻿namespace Domain.Customer
+﻿
+namespace Domain.Customer
 {
-    public record CustomerId (Guid Value);
-
-    
+    public record CustomerId (Guid Value); 
 }
 

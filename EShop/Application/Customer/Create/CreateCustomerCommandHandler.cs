@@ -8,31 +8,33 @@ namespace Application.Customer.Create
 	{
 
         private readonly ICustomerRepository _customerRepository;
+
         private readonly IMapper _mapper;
 
 		public CreateCustomerCommandHandler(ICustomerRepository customerRepository, IMapper mapper) 
 		{
-            _customerRepository = customerRepository;
-            _mapper = mapper;
+           _customerRepository = customerRepository;
 
-
+           _mapper = mapper;
         }
 
         public async Task<CreateCustomerCommandResponse> Handle(CreateCustomerCommandRequest request, CancellationToken cancellationToken)
         {
+            var customerId =  Guid.NewGuid();
 
-             var customerId =  Guid.NewGuid();
             var newCustomer = _mapper.Map<Domain.Customer.Customer>(request);
 
+           _customerRepository.Insert(newCustomer);
 
-            _customerRepository.Insert(newCustomer);
-            _customerRepository.SaveChangeAsync();
+           _customerRepository.SaveChangeAsync();
 
             var response = new CreateCustomerCommandResponse
             {
                 Success = true,
-                Message = "Customer successfully created."
+
+                Message = "Müşteri Oluşturuldu."
             };
+
             return await Task.FromResult(response);
 
         }

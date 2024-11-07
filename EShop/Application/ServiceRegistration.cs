@@ -13,8 +13,10 @@ namespace Application
 		public static void AddApplicationServices(this IServiceCollection collection)
 		{
 			collection.AddMediatR(typeof(ServiceRegistration));
+
 			collection.AddAutoMapper(typeof(ServiceRegistration));
-            collection.AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CreateCustomerCommandValidator>());
+
+            collection.AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CreateCustomerCommandValidator>()); //sor
         }
 	}
 }

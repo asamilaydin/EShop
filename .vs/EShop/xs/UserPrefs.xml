@@ -1,27 +1,106 @@
-﻿<Properties StartupConfiguration="{012D9E9C-EF4B-450F-A318-76C7208C59FB}|https">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.EShop.Application FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="EShop/Persistence/Migrations/ApplicationDbContext.cs">
+﻿<Properties StartupConfiguration="{012D9E9C-EF4B-450F-A318-76C7208C59FB}|http">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="EShop/Application/Order/Create/CreateOrderCommandHandler.cs">
     <Files>
-      <File FileName="EShop/Persistence/Migrations/ApplicationDbContext.cs" Line="1" Column="1" />
+      <File FileName="EShop/Application/Customer/Create/CreateCustomerCommandRequest.cs" Line="1" Column="1" />
+      <File FileName="EShop/Application/Customer/Create/CreateCustomerCommandResponse.cs" Line="6" Column="8" />
+      <File FileName="EShop/Application/Customer/Create/CreateCustomerCommandHandler.cs" Line="26" Column="1" />
+      <File FileName="EShop/EShopApp/Program.cs" Line="31" Column="1" />
+      <File FileName="EShop/Application/Customer/GetAll/GetAllCustomersQueryHandler.cs" Line="25" Column="13" />
+      <File FileName="EShop/Persistence/Repositories/Repository.cs" Line="67" Column="2" />
+      <File FileName="EShop/Application/Customer/GetAll/GetAllCustomersQueryResponse.cs" Line="7" Column="92" />
+      <File FileName="EShop/EShopApp/Controllers/CustomerController.cs" Line="99" Column="1" />
+      <File FileName="EShop/Domain/Customer/Customer.cs" />
+      <File FileName="EShop/Domain/Customer/ICustomerRepository.cs" />
+      <File FileName="EShop/Domain/Customer/CustomerId.cs" />
+      <File FileName="EShop/Application/Customer/Delete/DeleteCustomerCommandRequest.cs" Line="1" Column="1" />
+      <File FileName="EShop/Application/Customer/Delete/DeleteCustomerCommandHandler.cs" Line="21" Column="50" />
+      <File FileName="EShop/Domain/Repositories/IRepository.cs" Line="1" Column="1" />
+      <File FileName="EShop/Persistence/Repositories/OrderRepository.cs" Line="1" Column="1" />
+      <File FileName="EShop/Persistence/Repositories/CustomerRepository.cs" Line="17" Column="81" />
+      <File FileName="EShop/Persistence/Repositories/ProductRepository.cs" Line="22" Column="1" />
+      <File FileName="EShop/Application/Customer/GetById/GetByIdCustomerQueryRequest.cs" Line="6" Column="2" />
+      <File FileName="EShop/Application/Customer/GetById/GetByIdCustomerQueryResponse.cs" Line="11" Column="6" />
+      <File FileName="EShop/Application/Customer/GetById/GetByIdCustomerQueryHandler.cs" Line="21" Column="36" />
+      <File FileName="EShop/todo.txt" Line="9" Column="29" />
+      <File FileName="EShop/Application/Customer/Create/CreateCustomerMapper.cs" Line="1" Column="1" />
+      <File FileName="EShop/Application/Customer/GetAll/GetAllCustomerMapper.cs" Line="16" Column="1" />
+      <File FileName="EShop/Application/Customer/GetById/GetByIdCustomerMapper.cs" Line="15" Column="1" />
+      <File FileName="EShop/Persistence/ServiceRegistration.cs" Line="1" Column="1" />
+      <File FileName="EShop/Persistence/Configurations/CustomerConfiguration.cs" Line="1" Column="1" />
+      <File FileName="EShop/Application/Customer/Create/CreateCustomerCommandValidator.cs" Line="16" Column="76" />
+      <File FileName="EShop/Persistence/ApplicationDbContext.cs" Line="24" Column="1" />
+      <File FileName="EShop/Persistence/DesingTimeDbContextFactory.cs" Line="1" Column="1" />
+      <File FileName="EShop/Domain/Product/IProductRepository.cs" Line="1" Column="1" />
+      <File FileName="EShop/Domain/Product/Money.cs" Line="6" Column="1" />
+      <File FileName="EShop/Domain/Product/Product.cs" Line="16" Column="1" />
+      <File FileName="EShop/Domain/Product/ProductId.cs" Line="6" Column="1" />
+      <File FileName="EShop/Domain/Product/Sku.cs" Line="6" Column="45" />
+      <File FileName="EShop/Domain/Orders/Order.cs" Line="19" Column="62" />
+      <File FileName="EShop/Domain/Orders/LineItemId.cs" Line="1" Column="1" />
+      <File FileName="EShop/Domain/Orders/LineItem.cs" Line="21" Column="1" />
+      <File FileName="EShop/EShopApp/EShopApp.http" />
+      <File FileName="EShop/EShopApp/appsettings.json" />
+      <File FileName="EShop/EShopApp/WeatherForecast.cs" />
+      <File FileName="EShop/Application/Order/Create/CreateOrderCommandResponse.cs" Line="14" Column="54" />
+      <File FileName="EShop/Application/Order/Create/CreateOrderCommandRequest.cs" Line="12" Column="52" />
+      <File FileName="EShop/Application/Order/Create/CreateOrderCommandHandler.cs" Line="72" Column="15" />
+      <File FileName="EShop/Application/Order/Create/CreateOrderCommandValidator.cs" Line="7" Column="42" />
+      <File FileName="EShop/Application/Order/Create/CreateOrderMapper.cs" Line="22" Column="58" />
+      <File FileName="EShop/Application/Customer/GetAll/GetAllCustomersQueryRequest.cs" Line="1" Column="1" />
+      <File FileName="EShop/Persistence/Migrations/ApplicationDbContextModelSnapshot.cs" Line="182" Column="1" />
+      <File FileName="EShop/Persistence/Configurations/LineItemConfiguration.cs" Line="23" Column="50" />
+      <File FileName="EShop/Persistence/Configurations/OrderConfiguration.cs" Line="24" Column="49" />
+      <File FileName="EShop/Application/Product/Create/CreateProductCommandResponse.cs" Line="8" Column="6" />
+      <File FileName="EShop/Application/Product/Create/CreateProductCommandRequest.cs" Line="11" Column="46" />
+      <File FileName="EShop/Application/Product/Create/CreateProductCoomandHandler.cs" Line="41" Column="13" />
+      <File FileName="EShop/Application/Product/Create/CreateProductCommandValidator.cs" Line="20" Column="1" />
+      <File FileName="EShop/Application/Product/Create/CreateProductMapper.cs" Line="11" Column="96" />
+      <File FileName="EShop/Application/Order/Delete/DeleteProductCommandRequest.cs" Line="11" Column="2" />
+      <File FileName="EShop/Application/Order/Delete/DeleteProductCommandResponse.cs" Line="12" Column="5" />
+      <File FileName="EShop/Application/Order/Delete/DeleteProductCommandHandler.cs" Line="35" Column="6" />
+      <File FileName="EShop/Application/Customer/Delete/DeleteCustomerCommandResponse.cs" Line="7" Column="3" />
+      <File FileName="EShop/Application/Product/GetAll/GetAllProductQueryResponse.cs" Line="12" Column="9" />
+      <File FileName="EShop/Application/Product/GetAll/GetAllProductQueryRequest.cs" Line="8" Column="3" />
+      <File FileName="EShop/Application/Product/GetAll/GetAllProductQueryHandler.cs" Line="27" Column="31" />
+      <File FileName="EShop/Application/Product/GetAll/GetAllProductMapper.cs" Line="12" Column="5" />
+      <File FileName="EShop/Application/Product/GetById/GetByIdProductQueryResponse.cs" Line="13" Column="1" />
+      <File FileName="EShop/Application/Product/GetById/GetByIdProductQueryRequest.cs" Line="14" Column="1" />
+      <File FileName="EShop/Application/Product/GetById/GetByIdProductQueryHandler.cs" Line="27" Column="6" />
+      <File FileName="EShop/Application/Product/GetById/GetByIdProductMapper.cs" Line="20" Column="1" />
+      <File FileName="EShop/Persistence/Migrations/20240917115817_InitialCreate.Designer.cs" Line="1" Column="1" />
+      <File FileName="EShop/Persistence/Migrations/20240917115817_InitialCreate.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="EShop">
+          <Node name="EShop" expanded="True">
             <Node name="EShop" expanded="True">
-              <Node name="Domain" expanded="True" />
-              <Node name="Persistence" expanded="True" selected="True">
-                <Node name="Migrations" expanded="True" />
+              <Node name="Application">
+                <Node name="Order" expanded="True">
+                  <Node name="Create" expanded="True">
+                    <Node name="CreateOrderCommandHandler.cs" selected="True" />
+                  </Node>
+                </Node>
+                <Node name="Product" expanded="True" />
+              </Node>
+              <Node name="Domain">
+                <Node name="Orders" expanded="True" />
+                <Node name="Repositories" expanded="True" />
               </Node>
             </Node>
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.EShop.EShopApp FirstBuild="True" PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.EShop.EShopApp PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
 </Properties>

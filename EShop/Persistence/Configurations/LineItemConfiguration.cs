@@ -18,6 +18,10 @@ namespace Persistence.Configurations
                 .WithMany()
                 .HasForeignKey(li => li.ProductId);
 
+            builder.HasOne<Order>()
+                .WithMany()
+                .HasForeignKey(li => li.OrderId);
+
             builder.OwnsOne(li => li.Price);
         }
     }
