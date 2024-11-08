@@ -14,7 +14,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var app = builder.Build();
+
+WebApplication app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -23,7 +24,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.MapCustomerEndpoints();
+
+var customerEndpoint = new CustomerEndpoint();
+customerEndpoint.MapEndpoint(app);
+
 
 app.UseHttpsRedirection();
 

@@ -1,37 +1,50 @@
 ﻿using System;
 using Application.Customer.Create;
+using FluentValidation;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Versioning;
 
 namespace EShopApp.Endpoints
 {
-	public static class CustomerEndpoint
-	{
-        public static void MapCustomerEndpoints(this WebApplication app)
+    public class CustomerEndpoint : IEndpoint
+    {
+        public void MapEndpoint(IEndpointRouteBuilder app)
         {
-            app.MapPost("/customers/create", async (
-                [FromBody] CreateCustomerCommandRequest createCustomerCommandRequest,
-                IMediator mediator) =>
-            {
-                // Command'ı mediator aracılığıyla handler'a gönderiyoruz
-                CreateCustomerCommandResponse response = await mediator.Send(createCustomerCommandRequest);
+            var routeGroup = app
+                .MapGroup(prefix: "customers")
+                .WithTags("customers");
 
-                // İşlem sonucuna göre uygun yanıtı döndürüyoruz
-                if (response.Success)
-                {
-                    return Results.Ok(response);
-                }
-                else
-                {
-                    return Results.BadRequest(response); // Hata durumunda 400 döndürüyoruz
-                }
-            })
-            .WithName("CreateCustomer")
-            .WithSummary("Creates a new customer")
-            .WithDescription("Creates a new customer by providing necessary details.")
-            .Produces<CreateCustomerCommandResponse>(StatusCodes.Status200OK) // Başarılı durumda 200 döndürülür
-            .Produces<CreateCustomerCommandResponse>(StatusCodes.Status400BadRequest); // Hatalı istek durumunda 400 döndürülür
+            MapV1(routeGroup);
         }
+
+        private static void MapV1(IEndpointRouteBuilder routeGroup)
+        {
+            routeGroup
+                .MapPost("create", async (
+                    CreateCustomerCommandRequest request,
+                    ISender sender,
+     
+                    CancellationToken cancellationToken) =>
+                {
+                    var result = await sender.Send(request, cancellationToken);
+
+                    if (result.Success == true)
+                    {
+                        return Results.Ok(result);
+                    }
+                    else
+                    {
+                        return Results.BadRequest(result);
+                    }
+                })
+                //.MapToVersion  neden olmadı
+                .AllowAnonymous()
+                .WithSummary("müşteri kayıt")
+                .Produces<CreateCustomerCommandResponse>(StatusCodes.Status200OK)
+                .Produces<CreateCustomerCommandResponse>(StatusCodes.Status400BadRequest);
+        }
+
     }
 }
 

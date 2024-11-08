@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VamxVtLPCGdQkQ0hsVgYaMrPyVkdG/LQz7cJK9z7n5WnCyWBla30ckbqVtiWptotfd1BAEmb0pClbCZCznj8gA==",
+  "dgSpecHash": "SVw/+pGY0lNdm3LDwQDVyoF89l+uQTe+bEN1RroeKCMNA0Z6jeogbB+8Zs+cNy2QA7VD0C5xFt+Wzv7lcDl32A==",
   "success": true,
   "projectFilePath": "/Users/ahmet/Desktop/eShop/EShop/EShop/EShopApp/EShopApp.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "/Users/ahmet/.nuget/packages/mediatr/11.1.0/mediatr.11.1.0.nupkg.sha512",
     "/Users/ahmet/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
     "/Users/ahmet/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.1.0/mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
+    "/Users/ahmet/.nuget/packages/microsoft.aspnetcore.mvc.versioning/5.1.0/microsoft.aspnetcore.mvc.versioning.5.1.0.nupkg.sha512",
     "/Users/ahmet/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/ahmet/.nuget/packages/microsoft.entityframeworkcore/8.0.8/microsoft.entityframeworkcore.8.0.8.nupkg.sha512",
     "/Users/ahmet/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.8/microsoft.entityframeworkcore.abstractions.8.0.8.nupkg.sha512",
